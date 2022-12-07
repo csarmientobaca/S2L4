@@ -105,6 +105,7 @@ const starWarsCharacters = [
 Crea una variabile chiamata "characters" e inserisci un array vuoto
 */
 let characters = []
+console.log("***********2**************")
 
 /* ESERCIZIO 2
 Usando un for loop, cicla l'array "starWarsCharacters" ed accedi alla proprietà "name".
@@ -117,6 +118,7 @@ for (let i = 0; i < starWarsCharacters.length; i++) {
 console.log(characters)
 
 
+console.log("***********3**************")
 
 /* ESERCIZIO 3
   Seguendo i passaggi precedenti crea un array chiamato "femaleCharacters" e inserisci solo oggetti di personaggi femminili con questa struttura di esempio:
@@ -124,37 +126,28 @@ console.log(characters)
 */
 
 let femaleCharacters = []
-let oggetto = {}
 
 
 for (let i = 0; i < starWarsCharacters.length; i++) {
   if (starWarsCharacters[i].gender === "female") {
+    let oggetto = {}
 
     oggetto["name"] = starWarsCharacters[i].name
     oggetto["hair_color"] = starWarsCharacters[i].hair_color
     oggetto["eye_color"] = starWarsCharacters[i].eye_color
-    console.log("this is and ogg", oggetto)
     femaleCharacters.push(oggetto)
-    console.log("female caraters", femaleCharacters)
 
 
   }
 }
-// NOT WORKINGNOT WORKING
-// NOT WORKING
-// NOT WORKING
-// NOT WORKING
-// NOT WORKING
-// NOT WORKING
-// NOT WORKING
-
-// console.log(oggetto)
-// femaleCharacters.push(oggetto)
-
-// console.log("female caraters", femaleCharacters)
 
 
 
+console.log("female caraters", femaleCharacters)
+
+
+
+console.log("***********4**************")
 
 /* ESERCIZIO 4
   Crea un oggetto "eyeColor" che abbia come proprietà: blue, yellow, brown, red, blue-gray.
@@ -167,6 +160,7 @@ let eyeColor = { blue: [], yellow: [], brown: [], red: [], blue_gray: [] }
 
 
 
+console.log("***********5**************")
 
 /* ESERCIZIO 5
   Inserisci l'oggetto dei personaggi in "starWarsCharacters" nell'array corrispondente al colore dei loro occhi nell'oggetto "eyeColor" precedentemente creato.
@@ -206,6 +200,7 @@ for (let i = 0; i < starWarsCharacters.length; i++) {
 
 console.log(eyeColor)
 
+console.log("***********6**************")
 
 /* ESERCIZIO 6
   Usa un while loop per calcolare la massa totale dell'equipaggio
@@ -257,6 +252,7 @@ switch (true) {
     break;
 }
 
+console.log("***********8**************")
 
 /* ESERCIZIO 8
 
@@ -270,6 +266,8 @@ for (let i = 0; i < starWarsCharacters.length; i++) {
   }
 }
 console.log(starWarsCharacters)
+
+console.log("***********9**************")
 
 /* EXTRA ESERCIZIO 9
 
