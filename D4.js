@@ -279,7 +279,25 @@ Usa uno più for loop per raggiungere il risultato
 Una volta fatto, crea un console.log() per controllare la proprietà length di "characters" prima e dopo l'operazione
 */
 
+console.log("females", femaleCharacters)
+console.log("characters", characters)
+
+for (let i = 0; i < characters.length; i++) {
+  for (let b = 0; b < femaleCharacters.length; b++) {
+    if (characters[i] === femaleCharacters[b].name)
+      delete characters[i]
+  }
+}
+console.log("caracters array is now: ", characters)
+
+
 /* EXTRA ESERCIZIO 10
 
 Crea una funzionalità che prenda un elemento casuale dall'array "starWarsCharacters" e ne stampi in console le proprietà in modo discorsivo
 */
+
+
+let myJSON = JSON.stringify(starWarsCharacters[Math.floor(Math.random() * starWarsCharacters.length)])
+
+
+console.log(myJSON)
